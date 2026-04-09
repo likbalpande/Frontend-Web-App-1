@@ -16,7 +16,7 @@ function main(arr) {
 }
 
 async function getData() {
-    const URL = "https://dummyjson.com/products?select=title,price,rating,thumbnail";
+    const URL = "http://localhost:5001/products";
     const response = await fetch(URL);
     const data = await response.json();
     console.log(data);
@@ -26,4 +26,5 @@ async function getData() {
 
 getData();
 
+// ok
 // ok
