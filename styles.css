@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+#root {
+    display: flex;
+    padding: 48px;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
 .card {
-    margin: 24px auto;
     padding-right: 24px;
-    border: 1px solid brown;
+    border: 2px solid brown;
     border-radius: 16px;
 
     display: flex;
     align-items: center;
     gap: 24px;
 
-    max-width: fit-content;
+    overflow: hidden;
 }
 
 img {
